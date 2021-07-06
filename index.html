@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Monster Tamers Arena</title>
+<link href="ArchivoEstilo.css" rel="stylesheet" type="text/css">
+</head>
+<script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+<body>
+    <h1 id="title">Monster Tamers Arena</h1>
+    <p style="text-align: center;">Crea tus propias criaturas y lucha con ellas</p>
+    <div id="parent-block">
+        <img src="contenido\principal.png"
+            width="500"
+            alt="imagen principal">
+        <div id="contenedor-descripcion">
+            <p>
+                Monster Tamers Arena es un videojuego único, que te ofrece herramientas 
+                para crear criaturas al estilo pixel art con distintas animaciones, efectos, 
+                habilidades, etc., todo decidido por tí. También podrás usar tanto tus 
+                creaciones como las de otros jugadores en combates PVP de 4 vs 4 basados 
+                en las mecánicas de los JRPG tradicionales combinadas con las de Pokemon, 
+                que añadido a los múltiples tiers y modos de juego dan lugar a combates 
+                complejos y emocionantes.
+            </p>
+            <p>
+                Creado por Rexlord<br>
+                (Grupo G)
+            </p>
+            <p id="disclaimer"><strong>
+                ATENCIÓN: Esta página simula la campaña de microfinanciación<br>
+                de un videojuego ficticio y no representa un producto real.<br>
+                Práctica de Multimedia, 1º GDDV - Curso 20/21 (Quintana), URJC.<br>
+                La URJC no se hace responsable del contenido expuesto por el autor<br>
+            </strong></p>
+        </div>
+    </div>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html"><strong>Campaña</strong></a></li>
+            <li><a href="Preguntas.html">Preguntas frecuentes</a></li>
+            <li><a href="Comentarios.html">Comentarios</a></li>
+        </ul>
+    </nav>
+    <div id="campaña">
+        <div id="mySidenav" class="sidenav">
+            <a href="#descripcion">Descripción</a>
+            <a href="#contribuciones">Contribuciones</a>
+            <a href="#objetivos">Objetivos</a>
+            <a href="#equipo">Equipo</a>
+        </div>
+        <div id="main">
+            <video width="704" height="396" controls poster="contenido/principal.png">
+                <source src="contenido/video.mp4" type="video/mp4"/>
+                Tu navegador no soporta este video.
+            </video>
+            <audio src="contenido/cancion.mp3" width="640" controls>
+                Tu navegador no soporta este audio.
+            </audio>
+            <h1 id="descripcion">DESCRIPCIÓN</h1>
+            <h2>Creacion de criaturas</h2>
+            <p>
+                En Monster Tamers Arena puedes crear cualquier criatura que imagines, ya sean monstruos, 
+                humanoides, o personajes de otras franquicias que quieras recrear en este juego. Para 
+                ello, hay múltiples herramientas que te permiten modificar prácticamente todo sobre tu 
+                creación:
+                <ul>
+                    <li>
+                        Sprites: la herramienta de creación de imágenes pixelart te perimitirá crear 
+                        un sprite para la apariencia normal y dos para cada animación de ataque, una 
+                        preparándose para el ataque y otra realizando el ataque, ya que la sensación 
+                        de movimiento la dan las partículas.
+                    </li>
+                    <li>
+                        Animaciones: las animaciones de ataque solo tienen dos sprites, así que para 
+                        dar sensación de movimiento la herramienta de partículas te permite crear tus 
+                        propios efectos antes, durante y después del impacto del ataque, abriendo un 
+                        abanico de posibilidades en cuanto al aspecto visual de las habilidades.
+                    </li>
+                    <li>
+                        Habilidades: no solo puedes modificar el apartado gráfico de sus criaturas, 
+                        sino también sus habiidades: puedes elegir entre distintas habilidades no 
+                        dañinas, que se pueden modificar parcialmente, o puedes crear habilidades 
+                        dañinas a partir de una habilidad base, a la que puedes aumentar los atributos 
+                        y añadir efectos usando un número limitado de puntos.
+                    </li>
+                    <li>
+                        Atributos: por último pero no por ello menos importante, puedes modificar los 
+                        atributos de tu criatura (ataque, defensa, velocidad, etc.) a partir de unas 
+                        estadísticas base, que reduciendo algunas se pueden aumentar otras, pero el 
+                        efecto de ese aumento se reduce exponencialmente si se aumenta muchísimo un 
+                        atributo para balancear el juego.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                Una vez hayas creado tu criatura, puedes decidir si publicarla o no, si lo haces 
+                cualquier jugador que haya conseguido suficientes medallas ganando combates PVP podrá 
+                comprarla, y si suficientes jugadores compran tu criatura se desbloquearán espacios de 
+                creación para que puedas crear aun más.<br>
+                Además, dependiendo de el resultado de los combates en los que participe tu creación 
+                se le asignará un tier, que determina en que ligas puede combatir, así incluso si tus 
+                criaturas no son las mejores competitivamente tú y el resto de jugadores las podréis 
+                disfrutar en combates.
+            </p>
+            <h2>PVP</h2>
+            <p>
+                Monster Tamers Arena no solo consiste en crear criaturas, sino también en usar las tuyas 
+                y/o las de otros jugadores para luchar en combates PVP. Estos están separados en distintas 
+                ligas, que determinan que criaturas son permitidas dependiendo de su tier, que es variable 
+                y se asigna automáticamente dependiendo de los resultados de las batallas en las que se 
+                use cada criatura.<br>
+                Una vez el jugador elige una liga y las 4 criaturas con las que luchará se le empareja con 
+                otro jugador y comienza el combate:
+            </p>
+            <img src="contenido\imagen batalla.png"
+                width="700"
+                alt="interfaz batalla"
+            >
+            <p>
+                En este boceto de interfaz se pueden ver las distintas mecánicas que forman el combate:
+                <ul>
+                    <li>
+                        Barra de vida: es la barra roja, que depende del atributo "PV" y que al llegar 
+                        a 0 la criatura queda debilitada.
+                    </li>
+                    <li>
+                        Barra de aguante: es la barra verde debajo de la vida, que es igual para todas 
+                        las criaturas, y que se consume dependiendo del aguante que consume cada habilidad. 
+                        Si se intenta usar una habilidad sin tener suficiente aguante se consume parte 
+                        de la vida de la criatura.
+                    </li>
+                    <li>
+                        Barra de tiempo: es la barra amarilla, que indica cuanto tiempo le queda a cada 
+                        criatura para que llegue su turno, y que avanza más o menos rápido dependiendo 
+                        del atributo "velocidad".
+                    </li>
+                    <li>
+                        Habilidades: una vez le llega el turno a una criatura, el jugador que la 
+                        controle podrá elegir una entre cuatro habilidades (escogidas previamente entre 
+                        las 8 que tiene toda criatura al elegir equipo), y tras verse su animación le 
+                        llega el turno a la siguiente criatura. También se puede descansar, que recupera 
+                        por completo la barra de aguante.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                El combate termina cuando las cuatro criaturas de uno de los oponentes son derrotadas. 
+                El ganador recibe medallas, que puede usar en el mercado para comprar criaturas de otros 
+                jugadores.<br>
+                Dependiendo del número de victorias en una liga subirás en la clasificación correspondiente, 
+                y cuanto más alto estés más medallas recibirás como recompensa al terminar la semana, cuando 
+                se resetea la clasificación.<br>
+                Aparte de las ligas básicas, hay eventos semanales que introducen modos de juego alternativos, 
+                como combate con criaturas randomizadas, pelea contra jefes, etc.
+            </p>
+            <h2>Mercado</h2>
+            <p>
+                Las medallas conseguidas al ganar batallas PVP o eventos se pueden usar en el mercado, 
+                donde puedes ver todas las creaciones del resto de jugadores, y buscar la que más te 
+                atraiga para comprarla y poder usarla en batalla. Sin embargo, también puedes comprar una 
+                criatura random por la mitad de medallas, si prefieres la intriga de no saber cual te va 
+                a tocar.
+            </p>
+            <h1 id="contribuciones">Contribuciones</h1>
+            <h2>Seguidor</h2>
+            <p style="text-align: center;">
+                Contribuir 1€<br><br>
+                Recibirás un código que puedes usar una vez compres el juego para recibir una gran suma 
+                de medallas y 8 espacios extra de creación de criaturas.<br><br>
+                Fecha de entrega aproximada: octubre 2021.
+            </p>
+            <h2>Entrenador</h2>
+            <p style="text-align: center;">
+                Contribuir 10€<br><br>
+                Recibirás las recompensas anteriores más una copia del juego, y un acceso anticipado a 
+                las herramientas de creación de criaturas, podrás trasladar al juego completo lo que 
+                crees una vez salga al mercado.<br><br>
+                Fecha de entrega aproximada: noviembre 2022.
+            </p>
+            <h2>Maestro</h2>
+            <p style="text-align: center;">
+                Contribuir 25€<br><br>
+                Recibirás las recompensas anteriores más hojas de stickers de las criaturas que vienen 
+                incluidas en el juego. También podrás crear una criatura que se incluya por defecto en 
+                el juego.<br><br>
+                Fecha de entrega aproximada: noviembre 2022.
+            </p>
+            <h1 id="objetivos">Objetivos</h1>
+            <h2>20.000€</h2>
+            <p style="text-align: center;">
+                El juego base.
+            </p>
+            <h2>30.000€</h2>
+            <p style="text-align: center;">
+                Posibilidad de dibujar partículas nuevas para usarlas en la herramienta de animaciones.
+            </p>
+            <h2>50.000€</h2>
+            <p style="text-align: center;">
+                Posibilidad de crear criaturas jefe que ocupen los 4 espacios del equipo, con herramientas 
+                de creación modificadas, para usarlas en un nuevo modo de juego 4 vs jefe.
+            </p>
+            <h2>75.000€</h2>
+            <p style="text-align: center;">
+                Clanes, cuyos miembros pueden comprar las criaturas de los demás gratis y con torneos 
+                entre miembros del clan con modos de juego exclusivos o entre dos clanes rivales.
+            </p>
+            <h1 id="equipo">Equipo</h1>
+            <h2>Christian Campos Pan</h2>
+            <p>
+                Realización de la práctica: crear la página web, la imagen principal, el video de 
+                presentación y la canción original.<br>
+                Desarrollo del juego: diseño, programación, música, arte, marketing.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Monster Tamers Arena</title>
+<link href="ArchivoEstilo.css" rel="stylesheet" type="text/css">
+</head>
+<script>
+	function no() {
+		document.getElementById('respuesta1').innerHTML = 'NO'
+	}
+	function mostrarRespuesta(n) {
+		switch(n){
+			case 1: 
+				if(document.getElementById('respuesta1').innerHTML != 'En pc para windows'){
+					document.getElementById('respuesta1').innerHTML = 'En pc para windows';
+				} else {
+					document.getElementById('respuesta1').innerHTML = null;
+				}
+				break;
+			case 2: 
+				if(document.getElementById('respuesta2').innerHTML != 'Se puede usar dinero real para comprar espacios de creación de criaturas o medallas, pero ambos se pueden conseguir dentro del juego sin gastar dinero real'){
+					document.getElementById('respuesta2').innerHTML = 'Se puede usar dinero real para comprar espacios de creación de criaturas o medallas, pero ambos se pueden conseguir dentro del juego sin gastar dinero real';
+				} else {
+					document.getElementById('respuesta2').innerHTML = null;
+				}
+				break;
+			case 3: 
+				if(document.getElementById('respuesta3').innerHTML != 'Monster Tamers Arena viene por defecto con 50 criaturas que no cuestan medallas, por lo que las poseen todos los jugadores, así al lanzar el juego habrá contenido suficiente para el PVP.'){
+					document.getElementById('respuesta3').innerHTML = 'Monster Tamers Arena viene por defecto con 50 criaturas que no cuestan medallas, por lo que las poseen todos los jugadores, así al lanzar el juego habrá contenido suficiente para el PVP.';
+				} else {
+					document.getElementById('respuesta3').innerHTML = null;
+				}
+				break;
+                        case 4: 
+				if(document.getElementById('respuesta4').innerHTML != 'El plan es lanzarlo solo digitalmente en Steam.'){
+					document.getElementById('respuesta4').innerHTML = 'El plan es lanzarlo solo digitalmente en Steam.';
+				} else {
+					document.getElementById('respuesta4').innerHTML = null;
+				}
+				break;
+                        case 5: 
+				if(document.getElementById('respuesta5').innerHTML != 'Sí, Monter Tamers Arena es completamente online'){
+					document.getElementById('respuesta5').innerHTML = 'Sí, Monter Tamers Arena es completamente online';
+				} else {
+					document.getElementById('respuesta5').innerHTML = null;
+				}
+				break;
+		}
+	}
+</script>
+<body>
+	<h1 id="title">Monster Tamers Arena</h1>
+	<p style="text-align: center;">Crea tus propias criaturas y lucha con ellas</p>
+	<div id="parent-block">
+		<img src="contenido\principal.png"
+			 width="500"
+			 alt="imagen principal">
+		<div id="contenedor-descripcion">
+			<p id="descripcion-larga">
+				Monster Tamers Arena es un videojuego único, que te ofrece herramientas 
+                                para crear criaturas al estilo pixel art con distintas animaciones, efectos, 
+                                habilidades, etc., todo decidido por tí. También podrás usar tanto tus 
+                                creaciones como las de otros jugadores en combates PVP de 4 vs 4 basados 
+                                en las mecánicas de los JRPG tradicionales combinadas con las de Pokemon, 
+                                que añadido a los múltiples tiers y modos de juego dan lugar a combates 
+                                complejos y emocionantes.
+			</p>
+			<p id="autoria">
+				Creado por Rexlord<br>
+				(Grupo G)
+			</p>
+			<p id="disclaimer"><strong>
+				ATENCIÓN: Esta página simula la campaña de microfinanciación<br>
+				de un videojuego ficticio y no representa un producto real.<br>
+				Práctica de Multimedia, 1º GDDV - Curso 20/21 (Quintana), URJC.<br>
+				La URJC no se hace responsable del contenido expuesto por el autor<br>
+			</strong></p>
+		</div>
+	</div>
+	<nav id="menu">
+		<ul>
+			<li><a href="index.html">Campaña</a></li>
+			<li><a href="Preguntas.html"><strong>Preguntas frecuentes</strong></a></li>
+			<li><a href="Comentarios.html">Comentarios</a></li>
+		</ul>
+	</nav>
+	<div id="preguntas">
+		<div>
+			<button onclick="mostrarRespuesta(1);">
+				¿En qué plataformas se lanzará?
+			</button>
+			<p id="respuesta1">
+			</p>
+		</div>
+		<div>
+			<button onclick="mostrarRespuesta(2);">
+				¿Hay pagos dentro del juego?
+			</button>
+			<p id="respuesta2">
+			</p>
+		</div>
+		<div>
+			<button onclick="mostrarRespuesta(3);">
+				¿Todas las criaturas del juego son creadas por otros jugadores?
+			</button>
+			<p id="respuesta3">
+			</p>
+		</div>
+                <div>
+			<button onclick="mostrarRespuesta(4);">
+				¿Habrá un lanzamiento físico o solo digital?
+			</button>
+			<p id="respuesta4">
+			</p>
+		</div>
+                <div>
+			<button onclick="mostrarRespuesta(5);">
+				¿Hay que estar conectado a internet para jugar al juego?
+			</button>
+			<p id="respuesta5">
+			</p>
+		</div>
+	</div>
+</body>
+</html>
